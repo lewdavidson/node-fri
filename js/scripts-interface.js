@@ -1,5 +1,5 @@
 
-import { Age } from './js/scripts.js';
+import { Age } from './../js/scripts.js';
 
 $(document).ready(function(){
   $('form#age-form').submit(function(event){

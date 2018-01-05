@@ -31,7 +31,7 @@ gulp.task('jshint', function(){
 });
 //concatenating all -interface.js and placing them in tmp folder//
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/*-interface.js', './js/scripts.js'])
+  return gulp.src(['./js/*-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
@@ -108,7 +108,7 @@ gulp.task('htmlBuild', function(){
 });
 
 gulp.task('cssBuild', function() {
-  return gulp.src('./scss/*.scss')
+  return gulp.src('scss/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())

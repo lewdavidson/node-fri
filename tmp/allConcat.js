@@ -1,5 +1,5 @@
 
-import { Age } from './js/scripts.js';
+import { Age } from './../js/scripts.js';
 
 $(document).ready(function(){
   $('form#age-form').submit(function(event){
@@ -10,15 +10,3 @@ $(document).ready(function(){
   });
   $('#age-disp').append('<li>' + output + '</li>');
 });
-
-
-// export class Age {
-//   constructor(age) {
-//     this.age = age;
-//   }
-//
-//   ageToSecs(age) {
-//     console.log(age);
-//     // return (age * 31,536,000)
-//   }
-// };
