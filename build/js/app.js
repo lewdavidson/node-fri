@@ -19,8 +19,9 @@ var Age = exports.Age = function () {
   _createClass(Age, [{
     key: "ageToSecs",
     value: function ageToSecs(age) {
-      console.log(age);
-      // return (age * 31,536,000)
+      var newAge = this.age * 31;
+      console.log(newAge);
+      return newAge;
     }
   }]);
 
@@ -38,10 +39,10 @@ $(document).ready(function () {
   $('form#age-form').submit(function (event) {
     event.preventDefault();
     var age = parseInt($('#age').val());
-    var person = new _scripts.Age(age);
-    var output = ageToSecs();
+    var blah = new _scripts.Age(age);
+    var output = blah.ageToSecs(age);
+    $('#age-disp').append('<li>' + output + '</li>');
   });
-  $('#age-disp').append('<li>' + output + '</li>');
 });
 
 },{"./../js/scripts.js":1}]},{},[2]);
