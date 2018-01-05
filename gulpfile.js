@@ -31,7 +31,7 @@ gulp.task('jshint', function(){
 });
 //concatenating all -interface.js and placing them in tmp folder//
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/*-interface.js'])
+  return gulp.src(['./js/*-interface.js', './js/scripts.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
