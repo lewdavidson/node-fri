@@ -10,18 +10,20 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Age = exports.Age = function () {
-  function Age(age) {
+  function Age(age, time) {
     _classCallCheck(this, Age);
 
     this.age = age;
+    console.log(age);
+    this.time = time;
   }
 
   _createClass(Age, [{
-    key: "ageToSecs",
-    value: function ageToSecs(age) {
-      var newAge = this.age * 31;
-      console.log(newAge);
-      return newAge;
+    key: "toSecs",
+    value: function toSecs(age) {
+      console.log(age);
+      var newAge = 31;
+      return age * newAge;
     }
   }]);
 
@@ -40,7 +42,7 @@ $(document).ready(function () {
     event.preventDefault();
     var age = parseInt($('#age').val());
     var blah = new _scripts.Age(age);
-    var output = blah.ageToSecs(age);
+    var output = blah.toSecs(age);
     $('#age-disp').append('<li>' + output + '</li>');
   });
 });
