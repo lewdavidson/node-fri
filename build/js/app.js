@@ -14,20 +14,18 @@ var Age = exports.Age = function () {
     _classCallCheck(this, Age);
 
     this.age = age;
+    console.log(age);
   }
 
   _createClass(Age, [{
     key: "toSecs",
     value: function toSecs(age) {
-      console.log(age);
       return age * 31;
     }
   }]);
 
   return Age;
 }();
-
-;
 
 },{}],2:[function(require,module,exports){
 'use strict';
@@ -39,7 +37,7 @@ $(document).ready(function () {
     event.preventDefault();
     var age = parseInt($('input#age').val());
     var newAge = new _scripts.Age(age);
-    var output = toSecs();
+    var output = newAge.toSecs(age);
     $('#age-display').append('<li>' + output + '</li>');
   });
 });

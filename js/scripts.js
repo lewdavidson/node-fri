@@ -1,9 +1,9 @@
 export class Age {
   constructor(age) {
     this.age = age;
+    console.log(age);
   }
   toSecs(age) {
-    console.log(age);
    return age * 31;
   }
-};
+}
