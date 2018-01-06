@@ -1,0 +1,41 @@
+{
+  "name": "jasmine-expect",
+  "description": "Write Beautiful Specs with Custom Matchers",
+  "version": "3.8.1",
+  "author": "Jamie Mason <jamie@foldleft.io> (https://github.com/JamieMason)",
+  "homepage": "https://github.com/JamieMason/Jasmine-Matchers",
+  "keywords": [
+    "assertions",
+    "BDD",
+    "expectations",
+    "expects",
+    "jasmine",
+    "jest",
+    "TDD",
+    "test-matchers",
+    "testing"
+  ],
+  "license": "MIT",
+  "main": "dist/jasmine-matchers.js",
+  "ignore": [
+    "**/.*",
+    "*.conf.js",
+    "bin",
+    "build",
+    "Gruntfile.js",
+    "index.js",
+    "node_modules",
+    "src",
+    "test"
+  ],
+  "_release": "3.8.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.8.1",
+    "commit": "b23f318e0d0727421ec8455c01e901c5abbc98cd"
+  },
+  "_source": "https://github.com/JamieMason/Jasmine-Matchers.git",
+  "_target": "^3.8.1",
+  "_originalSource": "jasmine-expect",
+  "_direct": true
+}

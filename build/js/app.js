@@ -10,17 +10,22 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Age = exports.Age = function () {
-  function Age(age) {
+  function Age(age, year) {
     _classCallCheck(this, Age);
 
     this.age = age;
-    console.log(age);
+    this.year = year;
   }
 
   _createClass(Age, [{
     key: "toSecs",
     value: function toSecs(age) {
       return age * Math.pow(3.154, 7);
+    }
+  }, {
+    key: "yearComp",
+    value: function yearComp(year) {
+      return Math.floor(2018 - year);
     }
   }]);
 
@@ -36,9 +41,12 @@ $(document).ready(function () {
   $('form#age-form').submit(function (event) {
     event.preventDefault();
     var age = parseInt($('input#age').val());
-    var newAge = new _scripts.Age(age);
+    var year = parseInt($('input#year').val());
+    var newAge = new _scripts.Age(age, year);
     var output = newAge.toSecs(age);
-    $('#age-display').append('<li>' + output + '</li>');
+    var yearOutput = newAge.yearComp(year);
+    $('#age-display').append('<li>' + 'you are ' + output + ' earth-seconds old.' + '</li>');
+    $('#age-display').append('<li>' + 'you are ' + yearOutput + ' years old.' + '</li>');
   });
 });
 
