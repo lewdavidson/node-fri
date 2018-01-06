@@ -20,7 +20,7 @@ var Age = exports.Age = function () {
   _createClass(Age, [{
     key: "toSecs",
     value: function toSecs(age) {
-      return age * 31;
+      return age * Math.pow(3.154, 7);
     }
   }]);
 

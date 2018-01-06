@@ -4,6 +4,6 @@ export class Age {
     console.log(age);
   }
   toSecs(age) {
-   return age * 31;
+   return age * Math.pow(3.154, 7);
   }
 }
