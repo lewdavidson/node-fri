@@ -19,6 +19,7 @@ var Age = exports.Age = function () {
   _createClass(Age, [{
     key: "toSecs",
     value: function toSecs(age) {
+      console.log(age);
       return age * 31;
     }
   }]);
@@ -38,8 +39,8 @@ $(document).ready(function () {
     event.preventDefault();
     var age = parseInt($('input#age').val());
     var newAge = new _scripts.Age(age);
-    var output = newAge.toSecs();
-    $('#age-disp').append('<li>' + output + '</li>');
+    var output = toSecs();
+    $('#age-display').append('<li>' + output + '</li>');
   });
 });
 

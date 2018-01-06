@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     const age = parseInt($('input#age').val());
     const newAge = new Age(age);
-    const output = newAge.toSecs();
-    $('#age-disp').append('<li>' + output + '</li>');
+    const output = toSecs();
+    $('#age-display').append('<li>' + output + '</li>');
   });
 })

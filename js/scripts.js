@@ -3,6 +3,7 @@ export class Age {
     this.age = age;
   }
   toSecs(age) {
-    return age * 31;
+    console.log(age);
+   return age * 31;
   }
 };
