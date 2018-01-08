@@ -31,7 +31,10 @@
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine-expect": "^3.8.1",
+    "karma-jasmine-matchers": "^3.7.0"
+  },
   "scripts": {
     "test": "karma start karma.conf.js"
   },
