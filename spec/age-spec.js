@@ -23,4 +23,8 @@ describe('Age', function() {
   it('should return a value of 118 jupiter years with an input of 10 years', function() {
     expect(ew.jupiterYears(10)).toEqual(118);
   });
+
+  it('should test that the user will recieve a string in response to an input of 300 or greater for Mercury', function() {
+    expect(ew.mercuryYears(300)).toBeString();
+  });
 });

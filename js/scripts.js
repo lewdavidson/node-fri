@@ -10,7 +10,11 @@ export class Age {
     return Math.floor(2018 - year);
   }
   mercuryYears(age) {
-    return age * .24;
+    if (age >= 300) {
+      return(" you're probably dead, seeing as you're over 70 Mercury years old, and well over the life-expectancy for Earth.")
+    } else {
+      return age * .24;
+    }
   }
   venusYears(age) {
     return age * .62;
