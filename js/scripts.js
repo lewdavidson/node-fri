@@ -11,18 +11,30 @@ export class Age {
   }
   mercuryYears(age) {
     if (age >= 300) {
-      return(" you're probably dead, seeing as you're over 70 Mercury years old, and well over the life-expectancy for Earth.")
+      return("You're probably dead, seeing as you're over 70 Mercury years old, and well over the life-expectancy for Earth.")
     } else {
       return age * .24;
     }
   }
   venusYears(age) {
-    return age * .62;
+    if (age >= 140) {
+      return("You're probably dead, seeing as you're over 88 Venus years old, and well over the life-expectancy for Earth.")
+    } else {
+      return age * .64;
+    }
   }
   marsYears(age) {
-    return Math.floor(age * 1.88);
+    if (age >= 50) {
+      return("You'd probably dead on Mars, seeing as you're over 94 Mars years old.")
+    } else {
+      return Math.floor(age * 1.88);
+    }
   }
   jupiterYears(age) {
-    return Math.floor(age * 11.86);
+    if (age >= 9) {
+      return("You'd probably dead on Jupiter, seeing as you're over 94 Jupiter years old.")
+    } else {
+      return Math.floor(age * 11.86);
+    }
   }
 }
