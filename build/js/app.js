@@ -27,6 +27,26 @@ var Age = exports.Age = function () {
     value: function yearComp(year) {
       return Math.floor(2018 - year);
     }
+  }, {
+    key: "mercuryYears",
+    value: function mercuryYears(age) {
+      return age * .24;
+    }
+  }, {
+    key: "venusYears",
+    value: function venusYears(age) {
+      return age * .62;
+    }
+  }, {
+    key: "marsYears",
+    value: function marsYears(age) {
+      return age * 1.88;
+    }
+  }, {
+    key: "jupiterYears",
+    value: function jupiterYears(age) {
+      return age * 11.86;
+    }
   }]);
 
   return Age;
