@@ -30,7 +30,18 @@
 3. UX/UI
   * The site will have a simple input field for a user to enter their age. They can submit it to receive a list of their ages on other planets, and their remaining life-expectancy.
 
-5. Polish
+4. Polish
   * Would love to put ANY styling on it.
   * Make my README more interesting
-  * Make it FUNCTIONAL!
+
+5. Setup Instructions
+Open termainal and type the following:
+  * cd desktop
+  * git clone https://github.com/lewdavidson/node-fri.git
+  * cd node-fri
+  * npm install
+  * bower install
+  * gulp build
+  * gulp serve
+
+You will now have a live window in your default browser open to the project. Anything changed or saved will be reflected there. Happy calculations!
